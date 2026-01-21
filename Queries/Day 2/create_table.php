@@ -2,23 +2,25 @@
 
 include('conn.php');
 
-$create_table = "create table employees(
-    Id INT UNSIGNED PRIMARY KEY,
-    FirstName VARCHAR(50),
-    LastName VARCHAR(50),
-    Email VARCHAR(100),
-    JobTitle VARCHAR(100),
-    Salary DECIMAL(10, 2),
-    OfficeCode INT,
-    JoinDate DATE
-    )";
+$create_table = "CREATE TABLE Employees (
+    Id INT PRIMARY KEY,
+    firstName VARCHAR(50),
+    lastName VARCHAR(50),
+    officeCode INT,
+    officeCity VARCHAR(50),
+    jobTitle VARCHAR(50),
+    salary DECIMAL(10, 2),
+    email VARCHAR(100),
+    joinDate DATE,
+    departmentID INT
+)";
 
 $res = mysqli_query($conn, $create_table);
 
 if ($res > 0) {
-    return "Table Created Successfully";
+    echo "Table Created Successfully";
 } else {
-    return "Can not create table";
+    echo "Can not create table";
 }
 
 $conn->close();
