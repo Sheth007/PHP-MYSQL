@@ -2,7 +2,7 @@
 
 This repository contains training about PHP & MYSQL.
 
-## Index
+## Table of contents
 
 ### [Index file](index.php)
 This above 👆 is the file where this all queries are included and for connection file 👉 **[connection file.](conn.php)**
