@@ -1,4 +1,4 @@
-# 🧠 PHP-MYSQL Training
+# PHP-MYSQL Training
 
 This repository contains training about PHP & MYSQL.
 
