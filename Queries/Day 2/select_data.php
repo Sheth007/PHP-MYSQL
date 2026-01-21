@@ -39,7 +39,7 @@ include('conn.php');
 //         WHERE jobTitle LIKE 'Sales Rep'";
 
 // Write a query to display firstName, lastName, email of employee whose joining date greather than 2020-01-01
-// $qry10 = "SELECT firstName, lastName, email FROM employees 
+// $qry10 = "SELECT firstName, lastName, email FROM employees
 //         WHERE joinDate > '2020-01-01'";
 
 // Write a query to display firstName, lastName, email, jogTitle of employee whose job title contains manager word
