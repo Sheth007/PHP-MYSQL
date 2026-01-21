@@ -4,7 +4,7 @@ This repository contains training about PHP & MYSQL.
 
 ## Index
 
-### [All Queries](https://github.com/Sheth007/PHP-MYSQL/tree/main/Queries)
+### [All Queries](Queries/)
 This above 👆 has all queries that are performed.
 
 ### [Index file](https://github.com/Sheth007/PHP-MYSQL/blob/main/index.php)
