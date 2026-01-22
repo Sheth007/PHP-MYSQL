@@ -9,5 +9,14 @@
 // Day 2
 // include_once('Queries/Day 2/create_table.php');
 // include_once('Queries/Day 2/insert_data.php');
-include_once('Queries/Day 2/select_data.php');
+// include_once('Queries/Day 2/select_data.php');
+
+// Day 3
+// include_once('Queries/Day 3/create_table.php');
+// include_once('Queries/Day 3/alter_table.php');
+// include_once('Queries/Day 3/select_data.php');
+
+// include_once('Queries/Day 3/create_table_news_&_article.php');
+// include_once('Queries/Day 3/insert_data_news_&_article.php');
+include_once('Queries/Day 3/select_from_news_&_article.php');
 ?>
