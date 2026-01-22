@@ -1,0 +1,19 @@
+for the day 3 table sturcture is changed
+
+modifications are :
+
+employees table :
+Id (PK)
+firstName
+lastName
+officeCode
+officeCity
+jobTitle
+salary
+email
+joinDate
+departmentID (changes are : departmentID is now F.K.)
+
+NEW department table:
+departmentID (PK / refrence from employees table)
+deptname(optional)
