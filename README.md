@@ -11,7 +11,7 @@ This above 👆 has all queries that are performed day wise.
 ## 📃 Table of contents
 
 ```
-D:.
+.
 │   index.php
 │   PHP-SQL.pdf
 │   README.md
