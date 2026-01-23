@@ -2,9 +2,26 @@
 include('conn.php');
 
 // Display all record of news and article table using UNION
+
+/*
+the rule of union
+in union if you are fetching data from 2 diffrent tables then
+make sure to select same data type colums only (i.e Each SELECT in a UNION must return the same number of columns, 
+in the same order, with compatible data types in each column position.)
+like in below query I selct article_id and news_id from 2 tables so it will work
+but
+as you can see I select author whose datatype is varchar and also selected published_date from news table whose datatype is data so this will both conflict
+and you will get ERROR
+so while selecting columns make sure both columns has to be same data type
+
+now the second query works becasue I am assinging null to some columns why?
+its because in article table I have article_id so I select that and in news I dont have that so I am telling query to assing null to article_id in second query 
+so the schema of both stays same and will not give me error
+*/
+
 // $qry = "SELECT article_id, news_id, title, content, author FROM article
 //         UNION
-//         SELECT news_id, title, content, published_date, null FROM news";
+//         SELECT news_id, title, content, published_date FROM news";
 
 $qry = "SELECT article_id, NULL as news_id, title, content, author, NULL as published_date FROM article
         UNION
