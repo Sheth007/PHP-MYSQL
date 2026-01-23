@@ -11,11 +11,11 @@ $insert_data_news = "INSERT INTO news (news_id, title, description, published_da
 
 
 $insert_data_article = "INSERT INTO article (article_id, news_id, title, content, author) VALUES
-(1, 1, 'Stock Market Decline', 'The stock market has seen a sharp decline in recent hours, with major indices falling by over 5%. Experts suggest volatility ahead.', 'John Doe'),
-(2, 2, 'Innovative Tech Product: A Game Changer', 'This new tech product is set to change the way we interact with our homes, integrating seamlessly with all major smart home systems.', 'Jane Smith'),
-(3, 3, 'Climate Change Debate Intensifies', 'As the political debate heats up, the discussion around climate change becomes more polarizing, with some pushing for urgent action.', 'Michael Brown'),
-(4, 4, 'The International Sports Event and Its Impact', 'This global sporting event promises to boost tourism, bring nations together, and provide a platform for athletes from all over the world.', 'Emily Davis'),
-(5, 5, 'The Phenomenal Success of the New Movie', 'Breaking box office records, the film has captivated audiences worldwide, praised for its storytelling and groundbreaking visuals.', 'David Lee')";
+    (1, 1, 'Stock Market Decline', 'The stock market has seen a sharp decline in recent hours, with major indices falling by over 5%. Experts suggest volatility ahead.', 'John Doe'),
+    (2, 2, 'Innovative Tech Product: A Game Changer', 'This new tech product is set to change the way we interact with our homes, integrating seamlessly with all major smart home systems.', 'Jane Smith'),
+    (3, 3, 'Climate Change Debate Intensifies', 'As the political debate heats up, the discussion around climate change becomes more polarizing, with some pushing for urgent action.', 'Michael Brown'),
+    (4, 4, 'The International Sports Event and Its Impact', 'This global sporting event promises to boost tourism, bring nations together, and provide a platform for athletes from all over the world.', 'Emily Davis'),
+    (5, 5, 'The Phenomenal Success of the New Movie', 'Breaking box office records, the film has captivated audiences worldwide, praised for its storytelling and groundbreaking visuals.', 'David Lee')";
 
 $res = mysqli_query($conn, $insert_data_article);
 

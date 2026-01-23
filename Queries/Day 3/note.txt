@@ -17,3 +17,5 @@ departmentID (changes are : departmentID is now F.K.)
 NEW department table:
 departmentID (PK / refrence from employees table)
 deptname(optional)
+
+also added new tables news and article

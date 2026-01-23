@@ -3,52 +3,52 @@
 include('conn.php');
 
 // Write a query to find the firstName, lastName, officeCode, officeCity, jobTitle of all the employees whose department is not 4 and 5
-// $qry1 = "SELECT firstName, lastName, officeCode, officeCity, jobTitle FROM employees 
-//         WHERE departmentID <> 4 AND departmentID <> 5";
+$qry1 = "SELECT firstName, lastName, officeCode, officeCity, jobTitle FROM employees 
+        WHERE departmentID <> 4 AND departmentID <> 5";
 
 // Write a query to find out the firstName, lastName, officeCode of employee whose salary is greater than 30000 and office code is 1
-// $qry2 = "SELECT firstName, lastName, officeCode FROM employees 
-//         WHERE salary > 30000 AND officeCode = 1";
+$qry2 = "SELECT firstName, lastName, officeCode FROM employees 
+        WHERE salary > 30000 AND officeCode = 1";
 
 // Write a query to find out the firstName, lastName of employee whose salary is greater than 50000
-// $qry3 = "SELECT firstName, lastName FROM employees 
-//         WHERE salary > 50000 ";
+$qry3 = "SELECT firstName, lastName FROM employees 
+        WHERE salary > 50000 ";
 
 // Write a query to find out the total number of employee count whose salary is greater than 60000
-// $qry4 = "SELECT COUNT(*) AS totalEmployees FROM employees 
-//         WHERE salary > 60000 ";
+$qry4 = "SELECT COUNT(*) AS totalEmployees FROM employees 
+        WHERE salary > 60000 ";
 
 // Write a query display firstName, lastName, email of all employee. Show all records ascending orderwise by firstName.
-// $qry5 = "SELECT firstName, lastName, email FROM employees ORDER BY firstName";
+$qry5 = "SELECT firstName, lastName, email FROM employees ORDER BY firstName";
 
 // Write a query to display firstName, lastName, email of employee whose salary is heigher.
 // $qry6 = "SELECT firstName, lastName, email FROM employees ORDER BY salary desc LIMIT 1";
 // OR
-// $qry6 = "SELECT firstName, lastName, email FROM employees WHERE salary = (SELECT MAX(salary) FROM employees)";
+$qry6 = "SELECT firstName, lastName, email FROM employees WHERE salary = (SELECT MAX(salary) FROM employees)";
 
 // Write a query to display firstName, lastName, email of employee whose salary is lower.
-// $qry7 = "SELECT firstName, lastName, email FROM employees ORDER BY salary LIMIT 1";
+$qry7 = "SELECT firstName, lastName, email FROM employees ORDER BY salary LIMIT 1";
 // OR
 // $qry7 = "SELECT firstName, lastName, email FROM employees WHERE salary = (SELECT MIN(salary) FROM employees)";
 
 // Write a query to display total of all employee's paid salary.
-// $qry8 = "SELECT SUM(salary) AS totalSalary FROM employees";
+$qry8 = "SELECT SUM(salary) AS totalSalary FROM employees";
 
 // Write a query to find out the total number of employee count whose job title is Sales Rep
-// $qry9 = "SELECT COUNT(jobTitle) AS totalSalesRepCount FROM employees 
-//         WHERE jobTitle LIKE 'Sales Rep'";
+$qry9 = "SELECT COUNT(jobTitle) AS totalSalesRepCount FROM employees 
+        WHERE jobTitle LIKE 'Sales Rep'";
 
 // Write a query to display firstName, lastName, email of employee whose joining date greather than 2020-01-01
-// $qry10 = "SELECT firstName, lastName, email FROM employees
-//         WHERE joinDate > '2020-01-01'";
+$qry10 = "SELECT firstName, lastName, email FROM employees
+        WHERE joinDate > '2020-01-01'";
 
 // Write a query to display firstName, lastName, email, jogTitle of employee whose job title contains manager word
-// $qry11 = "SELECT firstName, lastName, email, jobTitle FROM employees 
-//         WHERE jobTitle LIKE '%manager%'";
+$qry11 = "SELECT firstName, lastName, email, jobTitle FROM employees 
+        WHERE jobTitle LIKE '%manager%'";
 
 // Write a query to find the firstName, lastName, email of all the employees whose job title is Sales Manager
-// $qry12 = "SELECT firstName, lastName, email, jobTitle FROM employees 
-//         WHERE jobTitle = 'Sales Manager'";
+$qry12 = "SELECT firstName, lastName, email, jobTitle FROM employees 
+        WHERE jobTitle = 'Sales Manager'";
 
 // Write a query to find the firstName, lastName, email of all the employees whose job title is Sales Manager and join date greater than 2021-01-01
 $qry13 = "SELECT firstName, lastName, email, jobTitle FROM employees 
