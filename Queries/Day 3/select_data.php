@@ -34,7 +34,9 @@ $qry6 = "SELECT firstName, lastName, email, joinDate FROM employees
 
 // Write a query to find the firstName, lastName, email, joinDate
 // of all the employees whose join date field have date.
-// ----------- SKIPPED -----------
+
+// this below is for to check specific columns data type
+$check = "SELECT DATA_TYPE FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees' AND column_name = 'joinDate'";
 
 // Write a query to find the firstName, lastName, email, joinDate
 // of all the employees whose join date is null
@@ -47,6 +49,41 @@ $qry8 = "SELECT firstName, lastName, email, joinDate FROM employees
 $qry9 = "SELECT firstName, lastName, officeCode, officeCity, joinDate FROM employees
     WHERE departmentID IN(1, 3)";
 
+// for $check and $qry7 only
+
+/*
+$res = mysqli_query($conn, $check);
+$col = mysqli_fetch_assoc($res);
+
+if ($col && $col['DATA_TYPE'] === 'date') {
+    $qry7 = "SELECT firstName, lastName, email, joinDate FROM employees";
+    $res = mysqli_query($conn, $qry7);
+    $row = mysqli_num_rows($res);
+    if ($row > 0) {
+        echo "<table border='1'>";
+        echo "<tr>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>email</th>
+            <th>joinDate</th>";
+        echo "</tr>";
+
+        while ($row = $res->fetch_assoc()) {
+            echo "<tr>";
+            echo "<td>" . $row['firstName'] . "</td>";
+            echo "<td>" . $row['lastName'] . "</td>";
+            echo "<td>" . $row['email'] . "</td>";
+            echo "<td>" . $row['joinDate'] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+    } else {
+        echo "Cannot select data";
+    }
+}
+*/
+
+// for normal query execpt $check and $qry7
 $res = mysqli_query($conn, $qry9);
 $row = mysqli_num_rows($res);
 
